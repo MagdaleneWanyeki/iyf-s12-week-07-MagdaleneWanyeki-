@@ -87,3 +87,5 @@ A modular JavaScript To-Do List and Shopping Cart application refactored into si
 - 
 ## Live Demo (if deployed)
 [View Live Demo](https://magdalenewanyeki.github.io/iyf-s12-week-07-MagdaleneWanyeki-/)
+
+[View Live Shopping cart](https://magdalenewanyeki.github.io/iyf-s12-week-07-MagdaleneWanyeki-/cart/index.html)
