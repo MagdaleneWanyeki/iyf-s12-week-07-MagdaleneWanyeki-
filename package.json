@@ -1,1 +1,1 @@
-{"name":"iyf-s12-week-07","version":"1.0.0","type":"module","scripts":{"lint":"eslint .","lint:fix":"eslint . --fix","format":"prettier --write \"**/*.{js,html,css}\"","test":"vitest run"}}
+{"name":"iyf-s12-week-07","version":"1.0.0","type":"module","scripts":{"lint":"eslint .","lint:fix":"eslint . --fix","format":"prettier --write \"**/*.{js,html,css}\"","test":"vitest run"},"devDependencies":{"@eslint/js":"^10.0.1","eslint":"^10.15.0","globals":"^17.14.0","prettier":"^3.10.1","vitest":"^5.1.2"}}
