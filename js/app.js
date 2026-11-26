@@ -249,3 +249,4 @@ clearCompletedBtn.addEventListener("click", function() {
 
 // Display saved tasks when the page opens
 renderTodos();
+
