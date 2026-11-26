@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart — Lesson 13</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.5;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .layout {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 2rem;
+        }
+        .product-card {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .product-card img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            border-radius: 6px;
+            background: #f4f4f4;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .cart-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .cart-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 700px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fresh Bakery &amp; Tea Shop</h1>
+        <div id="cart-badge">Cart: <strong>0</strong> items</div>
+    </header>
+
+    <main class="layout">
+        <section aria-labelledby="products-heading">
+            <h2 id="products-heading">Products</h2>
+            <div id="product-list"></div>
+        </section>
+
+        <aside aria-labelledby="cart-heading">
+            <h2 id="cart-heading">Your Cart</h2>
+            <div id="cart-items"></div>
+            <p><strong>Total:</strong> KSh <span id="cart-total">0</span></p>
+            <div class="cart-actions">
+                <button id="undo-btn" type="button" disabled>Undo</button>
+                <button id="clear-cart-btn" type="button">Clear Cart</button>
+            </div>
+        </aside>
+    </main>
+
+    <script type="module" src="cart.js"></script>
+</body>
+</html>
