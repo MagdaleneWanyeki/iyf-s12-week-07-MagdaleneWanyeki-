@@ -1,1 +1,1 @@
-
+{"name":"iyf-s12-week-07","version":"1.0.0","type":"module","scripts":{"lint":"eslint .","lint:fix":"eslint . --fix","format":"prettier --write \"**/*.{js,html,css}\"","test":"vitest run"}}
