@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3: Form Auto-Save</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 2rem;
+        max-width: 420px;
+      }
+
+      label {
+        display: block;
+        margin-top: 1rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.25rem;
+        box-sizing: border-box;
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+      }
+
+      small {
+        display: block;
+        margin-top: 0.75rem;
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Auto-Save</h1>
+    <form id="autosave-form">
+      <label>
+        Full Name
+        <input name="fullName" type="text" required />
+      </label>
+      <label>
+        Email
+        <input name="email" type="email" required />
+      </label>
+      <label>
+        Notes
+        <textarea name="notes" rows="4"></textarea>
+      </label>
+      <button type="submit">Submit Form</button>
+    </form>
+    <small id="save-indicator">Draft ready</small>
+    <script type="module" src="./autosave.js"></script>
+  </body>
+</html>

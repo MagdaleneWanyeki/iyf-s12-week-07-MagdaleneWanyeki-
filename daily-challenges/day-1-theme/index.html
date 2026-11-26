@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1: Theme Persistence</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #111827;
+        --btn-bg: #e5e7eb;
+      }
+
+      [data-theme='dark'] {
+        --bg: #111827;
+        --text: #f9fafb;
+        --btn-bg: #374151;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: system-ui, sans-serif;
+        padding: 2rem;
+        transition:
+          background-color 0.2s,
+          color 0.2s;
+      }
+
+      button {
+        background: var(--btn-bg);
+        color: var(--text);
+        border: none;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Theme Persistence</h1>
+    <button id="theme-toggle" type="button">Switch to Dark Mode</button>
+    <script type="module" src="./theme.js"></script>
+  </body>
+</html>
